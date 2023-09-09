@@ -26,6 +26,10 @@ body {
   color: #ffffff;
 }
 
+.link:hover {
+  color: #0dd7f1;
+}
+
 /* #region healer */
 
 .header {
@@ -63,7 +67,6 @@ body {
 }
 
 .item_nav_header {
-  color: #fff;
   font-family: Inter;
   font-size: 20px;
   font-weight: 400;
