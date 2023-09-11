@@ -1,7 +1,10 @@
 html {
   box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -74,16 +77,109 @@ body {
 }
 
 .icon_header {
- margin-left: 2.78%;
+  margin-left: 2.78%;
 }
 
 /* #endregion */
-  
+
 /* #region welcome_page */
 
 .welcome_page {
-width: 100%;
-height: 600px;
+  width: 100%;
+  height: 600px;
+}
+
+/* #endregion */
+
+/* #region about_page */
+
+.about_page {
+  width: 100%;
+  height: 837px;
+}
+
+.about_page_title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+
+  color: #0c0c0e;
+}
+
+.about_page_line {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 50px;
+  height: 1px;
+
+  background-color: #0c0c0e;
+}
+
+.about_page_text {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.about_page_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  list-style: none;
+}
+
+/* #endregion */
+
+/* #region about slider */
+
+.about_form {
+  text-align: center;
+  margin-top: 44px;
+}
+
+.about_label {
+  display: inline-block;
+}
+
+.about_real_radio {
+  width: 0;
+  height: 0;
+}
+
+.about_castom_radio {
+  display: inline-block;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #0c0c0e;
+}
+
+.about_castom_radio::before {
+  content: "";
+
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #bb945f;
+
+  display: none;
+}
+
+.about_real_radio:checked + .about_castom_radio::before {
+  display: block;
 }
 
 /* #endregion */
