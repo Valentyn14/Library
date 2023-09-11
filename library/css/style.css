@@ -51,7 +51,7 @@ body {
   font-family: Forum;
   font-size: 30px;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 166.67%;
   letter-spacing: 0.6px;
 
   color: #ffffff;
@@ -70,10 +70,9 @@ body {
 }
 
 .item_nav_header {
-  font-family: Inter;
   font-size: 20px;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 250%;
 }
 
 .icon_header {
@@ -106,7 +105,7 @@ body {
   font-family: Forum;
   font-size: 40px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 100%;
   letter-spacing: 2px;
 
   color: #0c0c0e;
@@ -127,9 +126,8 @@ body {
   margin-top: 40px;
   margin-bottom: 20px;
 
-  font-family: Inter;
   font-size: 20px;
-  line-height: 40px;
+  line-height: 200%;
 }
 
 .about_page_list {
@@ -141,32 +139,40 @@ body {
 
 /* #endregion */
 
-/* #region about slider */
+/* #region about radio button */
 
-.about_form {
-  text-align: center;
-  margin-top: 44px;
+.about_ralio_button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
-.about_label {
-  display: inline-block;
+.ralio_button_label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
 }
 
-.about_real_radio {
+.real_radio_button {
   width: 0;
   height: 0;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
 }
 
-.about_castom_radio {
+.castom_radio_button {
   display: inline-block;
-  cursor: pointer;
   width: 16px;
   height: 16px;
   border-radius: 50%;
   background-color: #0c0c0e;
 }
 
-.about_castom_radio::before {
+.castom_radio_button::before {
   content: "";
 
   display: inline-block;
@@ -178,8 +184,28 @@ body {
   display: none;
 }
 
-.about_real_radio:checked + .about_castom_radio::before {
+.real_radio_button:checked + .castom_radio_button::before {
   display: block;
+}
+
+/* #endregion */
+
+/* #region favorites_page */
+
+.favorites_page {
+  width: 100%;
+  height: 837px;
+}
+
+.favorites_title {
+  color: #0C0C0E;
+font-family: Forum;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+letter-spacing: 2px;
+text-transform: capitalize;
 }
 
 /* #endregion */
