@@ -1,3 +1,5 @@
+/* #region general */
+
 html {
   box-sizing: border-box;
 }
@@ -24,6 +26,11 @@ body {
   background-color: #ffffff;
 }
 
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
 .link {
   text-decoration: none;
   color: #ffffff;
@@ -32,6 +39,18 @@ body {
 .link:hover {
   color: #0dd7f1;
 }
+
+.line_page_title {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 50px;
+  height: 1px;
+
+  background-color: #0c0c0e;
+}
+
+/* #endregion */
 
 /* #region healer */
 
@@ -63,8 +82,6 @@ body {
 
 .list_nav_header {
   display: flex;
-  list-style: none;
-  padding-left: 0;
   width: 584px;
   justify-content: space-between;
 }
@@ -109,16 +126,6 @@ body {
   letter-spacing: 2px;
 
   color: #0c0c0e;
-}
-
-.about_page_line {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 50px;
-  height: 1px;
-
-  background-color: #0c0c0e;
 }
 
 .about_page_text {
@@ -194,18 +201,176 @@ body {
 
 .favorites_page {
   width: 100%;
-  height: 837px;
+  height: 1439px;
+  padding: 0 20px;
 }
 
 .favorites_title {
-  color: #0C0C0E;
-font-family: Forum;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%;
-letter-spacing: 2px;
-text-transform: capitalize;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  font-family: Forum;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 2px;
+
+  color: #0c0c0e;
 }
+
+/* #region favorites_form */
+
+.favorites_form {
+  margin-top: 40px;
+}
+
+.favorites_form_fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.favorites_form_legend {
+  margin-bottom: 40px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.favorites_form_label {
+  margin-right: 90px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.favorites_form_input {
+  margin-right: 20px;
+  margin-left: 0;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+/* #endregion */
+
+#list_spring,
+#list_summer,
+#list_autumn {
+  display: none;
+}
+
+.favorites_list {
+  margin-top: 40px;
+  padding-right: 40px;
+  width: 100%;
+  height: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.favorites_item {
+  position: relative;
+  width: 550px;
+  height: 555px;
+  margin-bottom: 40px;
+  border: 1px solid #000000;
+}
+
+.favorites_item_slogan {
+  margin: 15px 0 0 20px;
+  font-family: Forum;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.favorites_item_slogan_line {
+  width: 60px;
+  height: 1px;
+  margin: 0 0 0 20px;
+  border: none;
+
+  background-color: #bb945f;
+}
+
+.favorites_item_title {
+  margin-top: 20px;
+  margin-left: 20px;
+
+  font-size: 15px;
+  line-height: 266.67%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.favorites_item_title_autor {
+  text-transform: capitalize;
+}
+
+.favorites_item_text {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 0;
+  width: 355px;
+
+  font-size: 15px;
+  line-height: 266.67%;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+/* #region favorites button */
+
+.favorites_item_button {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.button_buy {
+  border: 1px solid #0c0c0e;
+  transition: 0.5s;
+}
+
+.button_own {
+  border: 1px solid #bb945f;
+}
+
+.favorites_item_button_text {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.button_buy_text {
+  color: #0c0c0e;
+}
+
+.button_own_text {
+  color: #bb945f;
+}
+
+.button_buy:hover {
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  transition: 0.5s;
+}
+
+.favorites_item_img {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
+}
+
+/* #endregion */
 
 /* #endregion */
