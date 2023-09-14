@@ -14,9 +14,6 @@ body {
   font-family: "Forum", cursive;
   font-family: "Inter", sans-serif;
 
-  font-size: 15px;
-  line-height: 266.67%;
-
   background-color: gray;
   color: #000000;
 }
@@ -61,12 +58,18 @@ body {
 
 .page_title_line {
   border: none;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   margin-top: 0;
   width: 50px;
   height: 1px;
 
   background-color: #0c0c0e;
+}
+
+.button:hover {
+  border: 1px solid #bb945f;
+  background: #bb945f;
+  transition: 0.5s;
 }
 
 /* #endregion */
@@ -136,7 +139,7 @@ body {
 
 .about_page_text {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 0;
   margin-bottom: 20px;
 
   font-size: 20px;
@@ -214,10 +217,6 @@ body {
 
 /* #region favorites_form */
 
-.favorites_form {
-  margin-top: 40px;
-}
-
 .favorites_form_fieldset {
   border: none;
   margin: 0;
@@ -229,6 +228,7 @@ body {
 
   font-size: 20px;
   font-weight: 700;
+  line-height: normal;
 }
 
 .favorites_form_label {
@@ -308,6 +308,8 @@ body {
   margin-left: 20px;
   width: 355px;
 
+  font-size: 15px;
+  line-height: 266.67%;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
@@ -374,8 +376,6 @@ body {
 }
 
 .coffee_shop_text {
-  margin: 40px 0;
-
   text-align: center;
   font-size: 20px;
   font-weight: 400;
@@ -384,6 +384,7 @@ body {
 }
 
 .coffee_shop_prices {
+  margin-top: 40px;
   width: 100%;
   height: 520px;
   display: flex;
@@ -491,6 +492,128 @@ body {
   letter-spacing: 2px;
 
   color: #000000;
+}
+
+/* #endregion */
+
+/* #region digital library cards */
+
+.library_cards_page {
+  width: 100%;
+  height: 614px;
+  padding: 20px 20px 40px;
+}
+
+.library_cards_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.library_cards_container_form {
+  width: 600px;
+  text-align: center;
+}
+
+.library_cards_subtitle {
+  margin-top: 0;
+
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+.library_cards_form {
+  width: 600px;
+  height: 386px;
+  padding: 20px 20px 30px;
+
+  border: 3px solid #bb945f;
+}
+
+.library_cards_label {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+  height: 272px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+
+  background: #bb945f;
+}
+
+.library_cards_label_text {
+  padding-top: 20px;
+  margin-bottom: 20px;
+  text-align: start;
+
+  font-family: Forum;
+  font-size: 30px;
+  line-height: 166.67%;
+  letter-spacing: 0.6px;
+}
+
+.library_cards_label_input {
+  width: 520px;
+  height: 66px;
+  margin-bottom: 25px;
+  padding: 8px 20px;
+
+  border-radius: 10px;
+
+  color: #8e8e8e;
+  font-family: Forum;
+  font-size: 30px;
+  line-height: 166.667%;
+  letter-spacing: 0.6px;
+}
+
+.library_cards_form_button {
+  padding: 10px 40px;
+
+  color: #0c0c0e;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.library_cards_container_acoount {
+  width: 456px;
+  height: 253px;
+  text-align: end;
+}
+
+.library_cards_container_acoount_text {
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 0.4px;
+}
+
+.library_cards_container_acoount_button {
+  width: 75px;
+  height: 30px;
+
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+
+  color: #0c0c0e;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 /* #endregion */
