@@ -50,12 +50,11 @@
       <main class="main_page">
         <!-- section welcome -->
         <section class="welcome_page">
-          <img
-            src="images/welcome_bg.png"
-            alt="Welcome to the Brooklyn Library"
-            width="1440"
-            height="600"
-          />
+          <div class="welcome_page_bg_gradient"></div>
+          <div class="welcome_page_container">
+            <p>Welcome<br />to the Brooklyn<br>Library</p>
+          </div>
+          <h2 hidden>welcome</h2>
         </section>
 
         <!-- section about -->
@@ -273,7 +272,7 @@
               </button>
               <img
                 class="favorites_item_img"
-                src="images/favorites/winter/winter_ book_4.png"
+                src="images/favorites/winter/winter_book_4.png"
                 alt="book"
                 width="200"
                 height="300"
@@ -522,9 +521,9 @@
               <p class="favorites_item_slogan">Staff Picks</p>
               <hr class="favorites_item_slogan_line" />
               <h3 class="favorites_item_title">
-                Casual Conversation<br /><ubertspan
+                Casual Conversation<br /><span
                   class="favorites_item_title_autor"
-                  >By Renia White</ubertspan
+                  >By Renia White</span
                 >
               </h3>
               <p class="favorites_item_text">
@@ -811,21 +810,21 @@
             <div class="library_cards_container_form">
               <h3 class="library_cards_subtitle">Find your Library card</h3>
               <form class="library_cards_form">
-                <label class="library_cards_label"
-                  ><span class="library_cards_label_text"
-                    >Brooklyn Public Library</span
+                <div class="library_cards_form_box"
+                  ><p class="library_cards_form_text"
+                    >Brooklyn Public Library</p
                   >
                   <input
-                    class="library_cards_label_input"
+                    class="library_cards_form_input"
                     type="text"
                     placeholder="Reader's name "
                   />
                   <input
-                    class="library_cards_label_input"
+                    class="library_cards_form_input"
                     type="number"
                     placeholder="Card number"
                   />
-                </label>
+                </div>
                 <button class="library_cards_form_button button" type="button">
                   Check the card
                 </button>
@@ -853,7 +852,7 @@
           </div>
         </section>
       </main>
-
+      <!-- footer -->
       <footer class="footer_page">
         <div class="footer_page_container">
           <div>
@@ -867,29 +866,62 @@
             </address>
             <ul class="footer_page_container_messenger list">
               <li class="footer_page_container_messenger_list">
-                <a class="link_white link" href="https://twitter.com/BKLYNlibrary"><img src="images/icons/twitter.svg" alt="twitter" width="24" height="24"></a>
+                <a
+                  class="link_white link"
+                  href="https://twitter.com/BKLYNlibrary"
+                  ><img
+                    src="images/icons/twitter.svg"
+                    alt="twitter"
+                    width="24"
+                    height="24"
+                /></a>
               </li>
               <li class="footer_page_container_messenger_list">
                 <a
                   class="link_white link"
                   href="https://www.instagram.com/bklynlibrary/"
-                ><img src="images/icons/instagram.svg" alt="instagram" width="24" height="24"></a>
+                  ><img
+                    src="images/icons/instagram.svg"
+                    alt="instagram"
+                    width="24"
+                    height="24"
+                /></a>
               </li>
               <li>
-                <a class="link_white link" href="https://www.facebook.com/BrooklynPublicLibrary"><img src="images/icons/facebook.svg" alt="facebook" width="24" height="24"></a>
+                <a
+                  class="link_white link"
+                  href="https://www.facebook.com/BrooklynPublicLibrary"
+                  ><img
+                    src="images/icons/facebook.svg"
+                    alt="facebook"
+                    width="24"
+                    height="24"
+                /></a>
               </li>
             </ul>
           </div>
           <div>
-            <p class="footer_page_container_working_hours ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mon - Fri<br>08:00 am - 07:00 pm</p>
-            <p class="footer_page_container_working_hours ">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sat - Sun<br>10:00 am - 06:00 pm</p>
+            <p class="footer_page_container_working_hours">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; Mon - Fri<br />08:00 am - 07:00 pm
+            </p>
+            <p class="footer_page_container_working_hours">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; Sat - Sun<br />10:00 am - 06:00 pm
+            </p>
           </div>
         </div>
-        <hr class="footer_page_line">
+        <hr class="footer_page_line" />
         <div class="footer_page_container_bottom">
           <p class="footer_page_container_bottom_text">2023</p>
-          <p class="footer_page_container_bottom_text">The Rolling Scopes School</p>
-          <p class="footer_page_container_bottom_text"><a class="link_white link" href="https://github.com/Valentyn14">Valentyn</a></p>
+          <p class="footer_page_container_bottom_text">
+            The Rolling Scopes School
+          </p>
+          <p class="footer_page_container_bottom_text">
+            <a class="link_white link" href="https://github.com/Valentyn14"
+              >Valentyn</a
+            >
+          </p>
         </div>
       </footer>
     </div>
