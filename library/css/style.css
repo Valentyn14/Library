@@ -203,7 +203,7 @@ body {
   justify-content: center;
 }
 
-.ralio_button_label {
+.adout_ralio_button_box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -553,7 +553,7 @@ body {
   text-align: center;
 }
 
-.library_cards_subtitle {
+.library_cards_container_form_subtitle {
   margin-top: 0;
 
   font-size: 30px;
@@ -564,7 +564,8 @@ body {
 .library_cards_form {
   width: 600px;
   height: 386px;
-  padding: 20px 20px 30px;
+  padding-top: 18px;
+  padding-left: 18px;
 
   border: 3px solid #bb945f;
 }
@@ -575,13 +576,13 @@ body {
   width: 560px;
   height: 272px;
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   background: #bb945f;
 }
 
 .library_cards_form_text {
-  padding-top: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
   text-align: start;
 
@@ -594,10 +595,11 @@ body {
 .library_cards_form_input {
   width: 520px;
   height: 66px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   padding: 8px 20px;
 
   border-radius: 10px;
+  border: none;
 
   color: #8e8e8e;
   font-family: Forum;
@@ -608,6 +610,7 @@ body {
 
 .library_cards_form_button {
   padding: 10px 40px;
+  margin-left: -18px;
 
   color: #0c0c0e;
   font-family: Inter;
@@ -628,6 +631,15 @@ body {
   text-align: end;
 }
 
+.library_cards_container_acoount_subtitle {
+  margin-top: 0;
+
+  font-family: Forum;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
 .library_cards_container_acoount_text {
   margin-top: 35px;
   margin-bottom: 35px;
@@ -640,6 +652,7 @@ body {
 .library_cards_container_acoount_button {
   width: 75px;
   height: 30px;
+  margin-left: 16px;
 
   border-radius: 2px;
   border: 1px solid #0c0c0e;
@@ -683,7 +696,7 @@ body {
 
 .footer_page_container_messenger {
   display: flex;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .footer_page_container_messenger_list {
@@ -692,6 +705,9 @@ body {
 
 .footer_page_container_working_hours {
   margin-top: 0;
+  margin-bottom: 10px;
+  display: flex;
+  text-align: end;
 }
 
 .footer_page_line {
