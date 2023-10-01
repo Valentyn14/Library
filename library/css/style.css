@@ -134,7 +134,7 @@ body {
   height: 600px;
   position: relative;
 
-  background-image: url(/images/welcome_image_bg.jpg);
+  background-image: url(/valentyn14-JSFEPRESCHOOL2023Q2/library/images/welcome_image_bg.jpg);
   background-size: 100%;
   background-position-y: center;
 }
@@ -198,11 +198,27 @@ body {
   height: 560px;
 }
 
+.about_pagination {
+  margin: 35px auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.about_button_pagination {
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #0c0c0e;
+  cursor: pointer;
+}
+
 /* #endregion */
 
 /* #region about radio button */
 
-.about_ralio_button {
+/* .about_ralio_button {
   margin-top: 35px;
   display: flex;
   justify-content: center;
@@ -247,7 +263,7 @@ body {
 
 .real_radio_button:checked + .castom_radio_button::before {
   display: block;
-}
+} */
 
 /* #endregion */
 
@@ -279,7 +295,7 @@ body {
 .favorites_form_label {
   margin: 5px;
   font-size: 20px;
-  
+
   cursor: pointer;
 }
 
