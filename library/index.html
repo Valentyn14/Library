@@ -92,32 +92,32 @@
             </li>
           </ul>
           <div class="about_ralio_button">
-            <div class="adoutralio_button_box">
-              <input
+            <label class="adout_ralio_button_label">
+              <imput
                 class="real_radio_button"
                 type="radio"
                 name="about_radio_button"
               />
               <span class="castom_radio_button"></span>
-            </div>
+            </label>
 
-            <div class="adoutralio_button_box">
-              <input
+            <label class="adout_ralio_button_label">
+              <imput
                 class="real_radio_button"
                 type="radio"
                 name="about_radio_button"
               />
               <span class="castom_radio_button"></span>
-            </div>
+            </label>
 
-            <div class="adoutralio_button_box">
-              <input
+            <label class="adout_ralio_button_label">
+              <imput
                 class="real_radio_button"
                 type="radio"
                 name="about_radio_button"
               />
               <span class="castom_radio_button"></span>
-            </div>
+            </label>
           </div>
         </section>
 
@@ -128,43 +128,59 @@
 
           <form class="favorites_form">
             <fieldset class="favorites_form_fieldset">
-              <legend class="favorites_form_legend">
-                Pick favorites of season
-              </legend>
-              <input
+                <legend class="favorites_form_legend">
+                  Pick favorites of season
+                </legend>
+              <div class="favorites_form_box_input">
+                <input
                 class="favorites_form_input"
                 type="radio"
                 name="season"
                 id="winter"
               />
-              <label class="favorites_form_label" for="winter">Winter</label>
+              </div>
+              <div class="favorites_form_box_label">
+                <label class="favorites_form_label" for="winter">Winter</label>
+              </div>
+             <div class="favorites_form_box_input">
               <input
-                class="favorites_form_input"
-                type="radio"
-                name="season"
-                id="spring"
-              />
-              <label class="favorites_form_label" for="spring">Spring</label>
+              class="favorites_form_input"
+              type="radio"
+              name="season"
+              id="spring"
+            />
+             </div>
+              <div class="favorites_form_box_label">
+                <label class="favorites_form_label" for="spring">Spring</label>
+              </div>
+             <div class="favorites_form_box_input">
               <input
-                class="favorites_form_input"
-                type="radio"
-                name="season"
-                id="summer"
-              />
-              <label class="favorites_form_label" for="summer">Summer</label>
+              class="favorites_form_input"
+              type="radio"
+              name="season"
+              id="summer"
+            />
+             </div>
+              <div class="favorites_form_box_label">
+                <label class="favorites_form_label" for="summer">Summer</label>
+              </div>
+            <div class="favorites_form_box_input">
               <input
-                class="favorites_form_input"
-                type="radio"
-                name="season"
-                id="autumn"
-              />
-              <label class="favorites_form_label" for="autumn">Autumn</label>
+              class="favorites_form_input"
+              type="radio"
+              name="season"
+              id="autumn"
+            />
+            </div>
+              <div class="favorites_form_box_label">
+                <label class="favorites_form_label" for="autumn">Autumn</label>
+              </div>
             </fieldset>
           </form>
 
           <!-- favorites list winter -->
 
-          <ul class="favorites_list list">
+          <ul class="favorites_list list" id="list_winter">
             <li class="favorites_item">
               <p class="favorites_item_slogan">Staff Picks</p>
               <hr class="favorites_item_slogan_line" />
@@ -272,7 +288,7 @@
               </button>
               <img
                 class="favorites_item_img"
-                src="images/favorites/winter/winter_book_4.png"
+                src="images/favorites/winter/winter_ book_4.png"
                 alt="book"
                 width="200"
                 height="300"
@@ -678,14 +694,14 @@
                 </li>
                 <li class="coffee_shop_prices_item">
                   <p class="coffee_shop_item_text coffee_shop_drinks_item_text">
-                    Hot tea
+                    Hot Tea
                   </p>
                   <hr class="coffee_shop_item_line" />
                   <p class="coffee_shop_item_price">$2</p>
                 </li>
                 <li class="coffee_shop_prices_item">
                   <p class="coffee_shop_item_text coffee_shop_drinks_item_text">
-                    Cold tea
+                    Cold Tea
                   </p>
                   <hr class="coffee_shop_item_line" />
                   <p class="coffee_shop_item_price">$2</p>
@@ -753,7 +769,7 @@
           <div class="contacts_page_container">
             <div>
               <h3 class="contacts_page_text_bold contacts_page_subtitle_first">
-                For all Library inquiries:
+                For All Library inquiries:
               </h3>
               <ul class="list">
                 <li class="contacts_page_text_normal contacts_page_text_item">
@@ -817,15 +833,17 @@
                   <input
                     class="library_cards_form_input"
                     type="text"
-                    placeholder="Reader's name "
+                    placeholder="Reader's name"
+                    name="firs_name"
                   />
                   <input
                     class="library_cards_form_input"
                     type="number"
                     placeholder="Card number"
+                    name="card_namber"
                   />
                 </div>
-                <button class="library_cards_form_button button" type="button">
+                <button class="library_cards_form_button button" type="submit">
                   Check the card
                 </button>
               </form>
