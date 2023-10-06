@@ -10,10 +10,24 @@
       href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/valentyn14-JSFEPRESCHOOL2023Q2/library/images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/valentyn14-JSFEPRESCHOOL2023Q2/library/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/valentyn14-JSFEPRESCHOOL2023Q2/library/images/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/valentyn14-JSFEPRESCHOOL2023Q2/library/images/favicon/site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
   </head>
   <body>
     <div class="main_wraper">
@@ -23,23 +37,25 @@
         <nav class="nav_header">
           <ul class="list_nav_header list">
             <li class="item_nav_header">
-              <a class="link_white link" href="#about">About</a>
+              <a class="link_white link js_link" href="#about">About</a>
             </li>
             <li class="item_nav_header">
-              <a class="link_white link" href="#favorites">Favorites</a>
+              <a class="link_white link js_link" href="#favorites">Favorites</a>
             </li>
             <li class="item_nav_header">
-              <a class="link_white link" href="#coffee_shop">Coffee shop</a>
+              <a class="link_white link js_link" href="#coffee_shop">Coffee shop</a>
             </li>
             <li class="item_nav_header">
-              <a class="link_white link" href="#our_contacts">Contacts</a>
+              <a class="link_white link js_link" href="#our_contacts">Contacts</a>
             </li>
             <li class="item_nav_header">
-              <a class="link_white link" href="#digital_library_cards"
+              <a class="link_white link js_link" href="#digital_library_cards"
                 >Library Card</a
               >
             </li>
           </ul>
+          <div class="burger_header_icon"></div>
+          <div class="nav_header_exit"></div>
         </nav>
         <img
           class="icon_header"
@@ -48,6 +64,11 @@
           width="28"
           height="28"
         />
+        <div class="burger_header burger">
+          <span class="burger_header_line burger_line_first"></span>
+          <span class="burger_header_line burger_line_second"></span>
+          <span class="burger_header_line burger_line_third"></span>
+        </div>
       </header>
 
       <!-- main -->
@@ -72,33 +93,37 @@
           <ul class="about_page_list">
             <li class="about_page_item">
               <img
-                src="images/about/the_gir_chooses_a_book.png"
+                class="about_page_images about_page_images_active"
+                src="./images/about/the_gir_chooses_a_book.png"
                 alt="The gir chooses a book"
-                width="450"
-                height="560"
               />
             </li>
             <li class="about_page_item">
               <img
-                src="images/about/busts_of_prominent_people.png"
+                class="about_page_images"
+                src="./images/about/busts_of_prominent_people.png"
                 alt="Busts of prominent people"
-                width="450"
-                height="560"
               />
             </li>
             <li class="about_page_item">
               <img
-                src="images/about/many_shelves_with_books.png"
+                class="about_page_images"
+                src="./images/about/many_shelves_with_books.png"
                 alt="Many shelves with books"
-                width="450"
-                height="560"
               />
             </li>
           </ul>
+          <div class="about_tablet_content">
+          <p class="about_tablet_carret"><img src="./images/icons/carret_left.svg" alt="carret left"></p>
+          <p class="about_tablet_image_wrap"><img class="about_tablet_image" src="./images/about/the_gir_chooses_a_book.png" alt="the gir chooses a book"></p>
+          <p class="about_tablet_carret"><img src="./images/icons/carret_right.svg" alt="carret right"></p>
+          </div>
           <div class="about_pagination">
             <div class="about_button_pagination"></div>
             <div class="about_button_pagination"></div>
             <div class="about_button_pagination"></div>
+            <div class="about_button_pagination about_button_pagination_tablet"></div>
+            <div class="about_button_pagination about_button_pagination_tablet"></div>
 
             <!-- <label class="adout_ralio_button_label">
               <imput
@@ -800,10 +825,9 @@
               </p>
             </div>
             <img
+              class="contacts_page_maps"
               src="images/contacts_map.png"
               alt="А map with our location"
-              width="696"
-              height="414"
             />
           </div>
         </section>
@@ -923,7 +947,9 @@
         <div class="footer_page_container_bottom">
           <p class="footer_page_container_bottom_text">2023</p>
           <p class="footer_page_container_bottom_text">
-            <a class="link link_white" href="https://rs.school/js-stage0/">The Rolling Scopes School</a>
+            <a class="link link_white" href="https://rs.school/js-stage0/"
+              >The Rolling Scopes School</a
+            >
           </p>
           <p class="footer_page_container_bottom_text">
             <a class="link_white link" href="https://github.com/Valentyn14"
@@ -933,5 +959,6 @@
         </div>
       </footer>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
